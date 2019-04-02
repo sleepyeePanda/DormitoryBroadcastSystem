@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="main">
+    <file>dust.png</file>
+    <file>miny_dust.png</file>
+    <file>cloudy.png</file>
+    <file>temperature.png</file>
+  </qresource>
+</RCC>
