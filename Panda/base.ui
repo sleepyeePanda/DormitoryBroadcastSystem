@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>300</height>
+    <height>299</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -31,10 +31,8 @@
 color:white</string>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>1</number>
     </property>
-    <widget class="QWidget" name="page"/>
-    <widget class="QWidget" name="page_2"/>
     <widget class="QWidget" name="page">
      <widget class="QLabel" name="timeLabel">
       <property name="geometry">
@@ -185,7 +183,7 @@ border-radius : 7px</string>
       <widget class="QLabel" name="tmp_val">
        <property name="geometry">
         <rect>
-         <x>90</x>
+         <x>95</x>
          <y>50</y>
          <width>51</width>
          <height>31</height>
@@ -203,7 +201,7 @@ border-radius : 7px</string>
         <string notr="true">background:transparent</string>
        </property>
        <property name="text">
-        <string>- 00</string>
+        <string>- 90</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -241,8 +239,8 @@ border-radius : 7px</string>
         <rect>
          <x>10</x>
          <y>40</y>
-         <width>71</width>
-         <height>71</height>
+         <width>81</width>
+         <height>81</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -273,8 +271,13 @@ border-radius : 7px</string>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">border:2px solid white;
-border-radius : 7px;</string>
+       <string notr="true">QPushButton{border:2px solid white;
+border-radius : 7px;}
+QPushButton:pressed{
+background-color:white;
+color:rgb(90,90,90);
+border:2px solid white;
+border-radius : 7px;}</string>
       </property>
       <property name="text">
        <string>&gt;</string>
@@ -307,7 +310,7 @@ border-radius : 7px;</string>
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QStackedWidget" name="stackedWidget_3">
+     <widget class="QStackedWidget" name="stackedDust">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -315,6 +318,9 @@ border-radius : 7px;</string>
         <width>181</width>
         <height>131</height>
        </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
       </property>
       <widget class="QWidget" name="page_5">
        <widget class="QFrame" name="frame">
@@ -358,15 +364,15 @@ border-radius : 7px</string>
           <string notr="true">background:transparent</string>
          </property>
          <property name="text">
-          <string>초미세먼지</string>
+          <string>미세먼지</string>
          </property>
         </widget>
         <widget class="QLabel" name="dust_str">
          <property name="geometry">
           <rect>
-           <x>85</x>
+           <x>95</x>
            <y>87</y>
-           <width>81</width>
+           <width>71</width>
            <height>31</height>
           </rect>
          </property>
@@ -409,7 +415,7 @@ border-radius : 7px</string>
           <string notr="true">background:transparent</string>
          </property>
          <property name="text">
-          <string>130</string>
+          <string>100</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -420,8 +426,8 @@ border-radius : 7px</string>
           <rect>
            <x>10</x>
            <y>40</y>
-           <width>71</width>
-           <height>71</height>
+           <width>81</width>
+           <height>81</height>
           </rect>
          </property>
          <property name="styleSheet">
@@ -433,7 +439,7 @@ border-radius : 7px</string>
          <widget class="QWidget" name="page_3"/>
          <widget class="QWidget" name="page_4"/>
         </widget>
-        <widget class="QPushButton" name="nextButton_2">
+        <widget class="QPushButton" name="nextDust">
          <property name="geometry">
           <rect>
            <x>140</x>
@@ -444,16 +450,21 @@ border-radius : 7px</string>
          </property>
          <property name="font">
           <font>
-           <family>나눔스퀘어라운드 ExtraBold</family>
+           <family>나눔스퀘어</family>
            <pointsize>11</pointsize>
-           <weight>75</weight>
-           <bold>true</bold>
+           <weight>50</weight>
+           <bold>false</bold>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border:2px solid white;
+          <string notr="true">QPushButton{border:2px solid white;
 border-radius : 7px;
-background:transparent;</string>
+background:transparent;}
+QPushButton:pressed{
+background-color:white;
+color:rgb(90,90,90);
+border:2px solid white;
+border-radius : 7px;}</string>
          </property>
          <property name="text">
           <string>&gt;</string>
@@ -461,7 +472,156 @@ background:transparent;</string>
         </widget>
        </widget>
       </widget>
-      <widget class="QWidget" name="page_6"/>
+      <widget class="QWidget" name="page_6">
+       <widget class="QFrame" name="frame_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>173</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgba(0,0,0,120);
+border :1px solid transparent;
+border-radius : 7px</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="label_10">
+         <property name="geometry">
+          <rect>
+           <x>8</x>
+           <y>11</y>
+           <width>91</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>나눔스퀘어 Light</family>
+           <pointsize>13</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background:transparent</string>
+         </property>
+         <property name="text">
+          <string>초미세먼지</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="dust_str_2">
+         <property name="geometry">
+          <rect>
+           <x>95</x>
+           <y>87</y>
+           <width>71</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>나눔스퀘어 Bold</family>
+           <pointsize>14</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background:transparent</string>
+         </property>
+         <property name="text">
+          <string>매우나쁨</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="dust_val_2">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>50</y>
+           <width>71</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>나눔스퀘어 Bold</family>
+           <pointsize>14</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background:transparent</string>
+         </property>
+         <property name="text">
+          <string>130</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QStackedWidget" name="stackedWidget_5">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>40</y>
+           <width>81</width>
+           <height>81</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="page_9"/>
+         <widget class="QWidget" name="page_10"/>
+        </widget>
+        <widget class="QPushButton" name="backDust">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>10</y>
+           <width>25</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>나눔스퀘어</family>
+           <pointsize>11</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{border:2px solid white;
+border-radius : 7px;
+background:transparent;}
+QPushButton:pressed{
+background-color:white;
+color:rgb(90,90,90);
+border:2px solid white;
+border-radius : 7px;}</string>
+         </property>
+         <property name="text">
+          <string>&lt;</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
      </widget>
     </widget>
     <widget class="QWidget" name="page_2">
@@ -1201,11 +1361,19 @@ margin : 0px 2px 2px 2px}
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">border:2px solid white;
-border-radius : 7px;</string>
+       <string notr="true">QPushButton{border:2px solid white;
+border-radius : 7px;}
+QPushButton:checked{
+background-color:white;
+color:rgb(90,90,90);
+border:2px solid white;
+border-radius : 7px;}</string>
       </property>
       <property name="text">
        <string>-</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
       </property>
      </widget>
      <widget class="QPushButton" name="addButton">
@@ -1226,11 +1394,19 @@ border-radius : 7px;</string>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">border:2px solid white;
-border-radius : 7px;</string>
+       <string notr="true">QPushButton{border:2px solid white;
+border-radius : 7px;}
+QPushButton::checked{
+background-color:white;
+color:rgb(90,90,90);
+border:2px solid white;
+border-radius : 7px;}</string>
       </property>
       <property name="text">
        <string>+</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
       </property>
      </widget>
      <widget class="QPushButton" name="backButton">
@@ -1251,96 +1427,16 @@ border-radius : 7px;</string>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">border:2px solid white;
-border-radius : 7px;</string>
+       <string notr="true">QPushButton{border:2px solid white;
+border-radius : 7px;}
+QPushButton:pressed{
+background-color:white;
+color:rgb(90,90,90);
+border:2px solid white;
+border-radius : 7px;}</string>
       </property>
       <property name="text">
        <string>&lt;</string>
-      </property>
-     </widget>
-     <widget class="QComboBox" name="comboBox">
-      <property name="geometry">
-       <rect>
-        <x>11</x>
-        <y>243</y>
-        <width>41</width>
-        <height>29</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>나눔스퀘어라운드 Regular</family>
-        <pointsize>11</pointsize>
-        <weight>50</weight>
-        <bold>false</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QComboBox{
-color:white;
-selection-color : white;
-selection-background-color : black;
-}
-QComboBoxt::down-button {
-color:white;
-}
-</string>
-      </property>
-      <item>
-       <property name="text">
-        <string>월</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>화</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>수</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>목</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>금</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>토</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>일</string>
-       </property>
-      </item>
-     </widget>
-     <widget class="QTimeEdit" name="timeEdit">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>243</y>
-        <width>101</width>
-        <height>29</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>나눔스퀘어라운드 Regular</family>
-        <pointsize>11</pointsize>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">selection-color : white;
-selection-background-color : black;
-border:transparent;</string>
       </property>
      </widget>
      <widget class="QLineEdit" name="lineEdit">
@@ -1378,8 +1474,14 @@ border:transparent;</string>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">border:2px solid white;
-border-radius : 7px;</string>
+       <string notr="true">QPushButton{border:2px solid white;
+border-radius : 7px;
+background:transparent;}
+QPushButton:pressed{
+background-color:white;
+color:rgb(90,90,90);
+border:2px solid white;
+border-radius : 7px;}</string>
       </property>
       <property name="text">
        <string>...</string>
@@ -1403,48 +1505,130 @@ border-radius : 7px;</string>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">border:2px solid white;
-border-radius : 7px;</string>
+       <string notr="true">QPushButton{border:2px solid white;
+border-radius : 7px;
+background:transparent;}
+QPushButton:pressed{
+background-color:white;
+color:rgb(90,90,90);
+border:2px solid white;
+border-radius : 7px;}</string>
       </property>
       <property name="text">
        <string>↑</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_7">
+     <widget class="QTimeEdit" name="timeEdit">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>242</y>
-        <width>141</width>
-        <height>30</height>
+        <x>52</x>
+        <y>243</y>
+        <width>101</width>
+        <height>29</height>
        </rect>
       </property>
       <property name="font">
        <font>
-        <family>나눔스퀘어라운드 ExtraBold</family>
+        <family>나눔스퀘어라운드 Regular</family>
         <pointsize>11</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">border:2px solid white;
-border-radius : 7px;</string>
+       <string notr="true">selection-color : white;
+selection-background-color : black;
+border:transparent;</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>243</y>
+        <width>41</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>나눔스퀘어라운드 Regular</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QComboBox{
+color:white;
+selection-color : white;
+selection-background-color : black;
+}
+QComboBoxt::down-button {
+color:white;
+}</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>월</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>화</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>수</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>목</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>금</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>토</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>일</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>242</y>
+        <width>143</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{border:2px solid white;
+border-radius : 7px;}</string>
       </property>
       <property name="text">
        <string/>
       </property>
      </widget>
-     <zorder>pushButton_7</zorder>
+     <zorder>label</zorder>
      <zorder>tableWidget</zorder>
      <zorder>delButton</zorder>
      <zorder>addButton</zorder>
      <zorder>backButton</zorder>
-     <zorder>comboBox</zorder>
-     <zorder>timeEdit</zorder>
      <zorder>lineEdit</zorder>
      <zorder>showDialog</zorder>
      <zorder>uploadButton</zorder>
+     <zorder>timeEdit</zorder>
+     <zorder>comboBox</zorder>
     </widget>
    </widget>
   </widget>
